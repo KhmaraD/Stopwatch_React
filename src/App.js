@@ -1,16 +1,9 @@
+import React from "react";
 import './App.css';
-import Stopwatch from "./components/Stopwatch";
+import StopwatchContainer from "./components/Stopwatch/StopwatchContainer";
 
 const App = () => {
-    return (
-        <div className="mainSection">
-            <div className="clock-holder">
-                <div className="stopwatch">
-
-                </div>
-            </div>
-        </div>
-    );
+    return <StopwatchContainer/>;
 }
 
 export default App;
