@@ -30,8 +30,10 @@ const StopwatchContainer = () => {
     }
 
     const reset = () => {
-        setTime(0);
-        setIsRun(true);
+        if (time !== 0 ) {
+            setTime(0);
+            setIsRun(true);
+        }
     }
 
     const wait = () => {
@@ -40,7 +42,6 @@ const StopwatchContainer = () => {
         setTimeout(() => {
             if (isClick) {
                 setIsRun(false);
-                setIsClick(false);
             }
             setIsClick(false);
         }, 300);

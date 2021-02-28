@@ -3,9 +3,9 @@ import style from "./Display.module.css"
 
 const Display = (props) => {
     return (
-        <div className={style.displayWrapper}>
+        <div>
             <h1>Stopwatch</h1>
-            <div>
+            <div className={style.watch}>
                 <span>{("0" + Math.floor((props.time / 3600000) % 60)).slice(-2)}:</span>
                 <span>{("0" + Math.floor((props.time / 60000) % 60)).slice(-2)}:</span>
                 <span>{("0" + Math.floor((props.time / 1000) % 60)).slice(-2)}</span>
@@ -13,4 +13,5 @@ const Display = (props) => {
         </div>
     );
 }
+
 export default Display;
