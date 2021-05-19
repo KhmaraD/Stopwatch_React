@@ -1,4 +1,4 @@
-https://khmarad.github.io/Stopwatch/
+https://khmarad.github.io/Stopwatch_React/
 
 Task
 
